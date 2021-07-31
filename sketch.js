@@ -6,6 +6,7 @@ let active = false  // a booling that checks if the continuous generations shoul
 let stepbutton;
 let backbutton;  // dom buttons for continuous running and stepping forward and back.
 let gendisplay; // dom html for generation display
+let linkit;
 
 /* here we can see that drawing the cells with only width size does perserve the squareness but it does not fit all the cells on the screen
  if the screen is not not square all the cells wont fit
@@ -37,9 +38,9 @@ function setup() {
   backbutton.position(width/4,height);
   gendisplay = createElement('h2',str(generation));
   gendisplay.position(20,height-20);
-  createP();
-  createP(); // put some space between button and link
-  createA('https://github.com/greggelong/game-of-life-p5js', 'link to this  repo');
+   
+  linkit = createA('https://github.com/greggelong/game-of-life-p5js', 'link to this  repo');
+  linkit.position(25,height-10);
   
   
   background(70);
