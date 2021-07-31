@@ -40,7 +40,7 @@ function setup() {
   gendisplay.position(20,height-20);
    
   linkit = createA('https://github.com/greggelong/game-of-life-p5js', 'link to this  repo');
-  linkit.position(width-30,height+30);
+  linkit.position(width-40,height+20);
   
   
   background(70);
