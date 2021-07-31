@@ -37,6 +37,10 @@ function setup() {
   backbutton.position(width/4,height);
   gendisplay = createElement('h2',str(generation));
   gendisplay.position(20,height-20);
+  createP();
+  createP(); // put some space between button and link
+  createA('https://github.com/greggelong/cfg-chinese', 'link to this  repo');
+  
   
   background(70);
 
